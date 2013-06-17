@@ -1,0 +1,1774 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This XML file contains the alert database. All the Megaraid alerts-->
+<!-- are specified here along with their default severities and alert actions-->
+<!-- Only the severity and alert actions can be modified for any alert-->
+
+<!-- Only one value can be assigned for severity. The list of valid values is shown below-->
+<!--Severity values ==> Info; Warning; Critical; Fatal-->
+
+<!--Multiple values can be assigned to the ActionList field -->
+<!-- ActionList values ==> Syslog; VivaldiLog; Popup; -->
+
+
+<alertDatabase>
+
+	<alertInfo>
+		<id>0</id>
+		<description>Firmware initialization started (PCI ID %04x/%04x/%04x/%04x)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>1</id>
+		<description>Firmware version %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>2</id>
+		<description>Unable to recover cache data from TBBU</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>3</id>
+		<description>Cache data recovered from TBBU successfully</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>4</id>
+		<description>Configuration cleared</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>5</id>
+		<description>Cluster down; communication with peer lost</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>6</id>
+		<description>%s ownership changed from %02x to %02x</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>7</id>
+		<description>Alarm disabled by user</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>8</id>
+		<description>Alarm enabled by user</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>9</id>
+		<description>Background initialization rate changed to %d%%</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>10</id>
+		<description>Controller cache discarded due to memory/battery problems</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>11</id>
+		<description>Unable to recover cache data due to configuration mismatch</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>12</id>
+		<description>Cache data recovered successfully</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>13</id>
+		<description>Controller cache discarded due to firmware version incompatibility</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>14</id>
+		<description>Consistency Check rate changed to %d%%</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>15</id>
+		<description>Fatal firmware error: %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>16</id>
+		<description>Factory defaults restored</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>17</id>
+		<description>Flash downloaded image corrupt</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>18</id>
+		<description>Flash erase error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>19</id>
+		<description>Flash timeout during erase</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>20</id>
+		<description>Flash error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>21</id>
+		<description>Flashing image: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>22</id>
+		<description>Flash of new firmware image(s)complete</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>23</id>
+		<description>Flash programming error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>24</id>
+		<description>Flash timeout during programming</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>25</id>
+		<description>Flash chip type unknown</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>26</id>
+		<description>Flash command set unknown</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>27</id>
+		<description>Flash verify failure</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>28</id>
+		<description>Flush rate changed to %d seconds</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>29</id>
+		<description>Hibernate command received from host</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>30</id>
+		<description>Event log cleared</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>31</id>
+		<description>Event log wrapped</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>32</id>
+		<description>Multi-bit ECC error: ECAR=%x, ELOG=%x, (%s)</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>33</id>
+		<description>Single-bit ECC error: ECAR=%x, ELOG=%x, (%s)</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>34</id>
+		<description>Not enough controller memory</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>35</id>
+		<description>Patrol Read complete</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>36</id>
+		<description>Patrol Read paused</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>37</id>
+		<description>Patrol Read Rate changed to %d%%</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>38</id>
+		<description>Patrol Read resumed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>39</id>
+		<description>Patrol Read started</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>40</id>
+		<description>Rebuild rate changed to %d%%</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>41</id>
+		<description>Reconstruction rate changed to %d%%</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>42</id>
+		<description>Shutdown command received from host</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>43</id>
+		<description>Test event: '%s'</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>44</id>
+		<description>Time established as %s; (%d seconds since power on)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>45</id>
+		<description>User entered firmware debugger</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>46</id>
+		<description>Background Initialization aborted on %s</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>47</id>
+		<description>Background Initialization corrected medium error (%s at %lx, $s at %lx)</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>48</id>
+		<description>Background Initialization completed on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>49</id>
+		<description>Background Initialization completed with uncorrectable errors on %s</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>50</id>
+		<description>Background Initialization detected uncorrectable double medium errors (%s at %lx on %s)</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>51</id>
+		<description>Background Initialization failed on %s</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>52</id>
+		<description>Background Initialization progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>53</id>
+		<description>Background Initialization started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>54</id>
+		<description>Policy change on %s from %s to %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>55</id>
+		<description>OBSOLETE</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>56</id>
+		<description>Consistency Check aborted on %s</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>57</id>
+		<description>Consistency Check corrected medium error (%s at %lx, $s at %lx)</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>58</id>
+		<description>Consistency Check done on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>59</id>
+		<description>Consistency Check done with corrections on %s, (corrections=%d)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>60</id>
+		<description>Consistency Check detected uncorrectable double medium errors (%s at %lx on %s)</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>61</id>
+		<description>Consistency Check failed on %s</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>62</id>
+		<description>Consistency Check failed with uncorectable data on %s</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>63</id>
+		<description>Consistency Check found inconsistent parity on %s at strip %lx</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>64</id>
+		<description>Consistency Check inconsistency logging disabled on %s (too many inconsistencies)</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>65</id>
+		<description>Consistency Check progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>66</id>
+		<description>Consistency Check started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>67</id>
+		<description>Initialization aborted on %s</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>68</id>
+		<description>Initialization failed on %s</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>69</id>
+		<description>Initialization progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>70</id>
+		<description>Fast initialization started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>71</id>
+		<description>Full initialization started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>72</id>
+		<description>Initialization complete on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>73</id>
+		<description>%s Properties updated to %s (from %s)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>74</id>
+		<description>Reconstruction complete on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>75</id>
+		<description>Reconstruction of %s stopped due to unrecoverable errors</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>76</id>
+		<description>Reconstruct detected uncorrectable double medium errors (%s at %lx on %s at %lx)</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>77</id>
+		<description>Reconstruction progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>78</id>
+		<description>Reconstruction resumed on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>79</id>
+		<description>Reconstruction resume of %s failed due to configuraiton mismatch</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>80</id>
+		<description>Reconstruction started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>81</id>
+		<description>State change on %s from %s to %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>82</id>
+		<description>Clear aborted on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>83</id>
+		<description>Clear failed on %s (Error %02x)</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>84</id>
+		<description>Clear progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>85</id>
+		<description>Clear started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>86</id>
+		<description>Clear completed on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>87</id>
+		<description>Error on %s (Error %02x)</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>88</id>
+		<description>Format complete on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>89</id>
+		<description>Format started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>90</id>
+		<description>Hot Spare SMART polling failed on %s (Error %02x)</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>91</id>
+		<description>Inserted: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>92</id>
+		<description>%s is not supported</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>93</id>
+		<description>Patrol Read corrected medium error on %s at %lx</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>94</id>
+		<description>Patrol Read progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>95</id>
+		<description>Patrol Read found an uncorrectable medium error on %s at %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>96</id>
+		<description>Predictive failure: %s</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>97</id>
+		<description>Puncturing bad block on %s at %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>98</id>
+		<description>Rebuild aborted by user on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>99</id>
+		<description>Rebuild complete on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>100</id>
+		<description>Rebuild complete on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>101</id>
+		<description>Rebuild failed on %s due to source drive error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>102</id>
+		<description>Rebuild failed on %s due to target drive error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>103</id>
+		<description>Rebuild progress on %s is %s</description>
+	</alertInfo>
+
+	<alertInfo>
+		<id>104</id>
+		<description>Rebuild resumed on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>105</id>
+		<description>Rebuild started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>106</id>
+		<description>Rebuild automatically started on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>107</id>
+		<description>Rebuild stopped on %s due to loss of cluster ownerhsip</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>108</id>
+		<description>Reassign write operaiton failed on %s at %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>109</id>
+		<description>Unrecoverable medium error during rebuld on %s at %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>110</id>
+		<description>Corrected medium error during recovery on %s at %lx</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>111</id>
+		<description>Unrecoverable medium error during recovery on %s at %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>112</id>
+		<description>Removed: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>113</id>
+		<description>Unexpected sense: %s, CDB:%s, Sense:%s</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>114</id>
+		<description>State change on %s from %s to %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>115</id>
+		<description>State change by user on %s from %s to %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>116</id>
+		<description>Redundant path to %s broken</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>117</id>
+		<description>Redundant path to %s restored</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>118</id>
+		<description>Dedicated Hot Spare %s no longer useful due to deleted array</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>119</id>
+		<description>SAS topology error: Loop detected</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>120</id>
+		<description>SAS topology error: Unaddressable device</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>121</id>
+		<description>SAS topology error: Multiple ports to the same SAS address</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>122</id>
+		<description>SAS topology error: Expander error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>123</id>
+		<description>SAS topology error: SMP timeout</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>124</id>
+		<description>SAS topology error: Out of route entries</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>125</id>
+		<description>SAS topology error: Index not found</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>126</id>
+		<description>SAS topology error: SMP function failed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>127</id>
+		<description>SAS topology error: SMP CRC error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>128</id>
+		<description>SAS topology error: Multiple subtractive</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>129</id>
+		<description>SAS topology error: Table to table</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>130</id>
+		<description>SAS topology error: Multiple paths</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>131</id>
+		<description>Unable to access device %s</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>132</id>
+		<description>Dedicated Hot Spare created on %s (%s)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>133</id>
+		<description>Dedicated Hot Spare %s (%s) disabled</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>134</id>
+		<description>Dedicated Hot Spare %s no longer useful for all arrays</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>135</id>
+		<description>Global Hot Spare created on %s (%s)</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>136</id>
+		<description>Global Hot Spare %s (%s) disabled</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>137</id>
+		<description>Global Hot Spare %s does not cover all arrays</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>138</id>
+		<description>Created %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>139</id>
+		<description>Deleted %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>140</id>
+		<description>Marking %s inconsistent due to active writes at shutdown</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>141</id>
+		<description>Battery Present</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>142</id>
+		<description>Battery Not Present</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>143</id>
+		<description>New Battery Detected</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>144</id>
+		<description>Battery has been replaced</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>145</id>
+		<description>Battery temperature is high</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>146</id>
+		<description>Battery voltage low</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>147</id>
+		<description>Battery started charging</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>148</id>
+		<description>Battery is discharging</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>149</id>
+		<description>Battery temperature is normal</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>150</id>
+		<description>Battery needs replacement - SOH Bad</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>151</id>
+		<description>Battery relearn started</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>152</id>
+		<description>Battery relearn in progress</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>153</id>
+		<description>Battery relearn completed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>154</id>
+		<description>Battery relearn timed out</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>155</id>
+		<description>Battery relearn pending: Battery is under charge</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>156</id>
+		<description>Battery relearn postponed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>157</id>
+		<description>Battery relearn will start in 4 days</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>158</id>
+		<description>Battery relearn will start in 2 day</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>159</id>
+		<description>Battery relearn will start in 1 day</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>160</id>
+		<description>Battery relearn will start in 5 hours</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>161</id>
+		<description>Battery removed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>162</id>
+		<description>Current capacity of the battery is below threshold</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>163</id>
+		<description>Current capacity of the battery is above threshold</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>164</id>
+		<description>Enclosure (SES) discovered on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>165</id>
+		<description>Enclosure (SAF-TE) discovered on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>166</id>
+		<description>Enclosure %s communication lost</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>167</id>
+		<description>Enclosure %s communication restored</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>168</id>
+		<description>Enclosure %s fan %d failed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>169</id>
+		<description>Enclosure %s fan %d inserted</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>170</id>
+		<description>Enclosure %s fan %d removed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>171</id>
+		<description>Enclosure %s power supply %d failed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>172</id>
+		<description>Enclosure %s power supply %d inserted</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>173</id>
+		<description>Enclosure %s power supply %d removed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>174</id>
+		<description>Enclosure %s EMM %d failed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>175</id>
+		<description>Enclosure %s EMM %d inserted</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>176</id>
+		<description>Enclosure %s EMM %d removed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>177</id>
+		<description>Enclosure %s temperature sensor %d below warning threshold</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>178</id>
+		<description>Enclosure %s temperature sensor %d below error threshold</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>179</id>
+		<description>Enclosure %s temperature sensor %d above warning threshold</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>180</id>
+		<description>Enclosure %s temperature sensor %d above error threshold</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>181</id>
+		<description>Enclosure %s shutdown</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>182</id>
+		<description>Enclosure %s not supported; too many enclosures connected to port</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>183</id>
+		<description>Enclosure %s firmware mismatch (EMM %d)</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>184</id>
+		<description>Enclosure %s sensor %d bad</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>185</id>
+		<description>Enclosure %s phy bad for slot %d</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>186</id>
+		<description>Enclosure %s is unstable</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>187</id>
+		<description>Enclosure %s hardware error</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>188</id>
+		<description>Enclosure %s not responding</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>189</id>
+		<description>SAS/SATA mixing not supported in enclosure; %s disabled</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>190</id>
+		<description>Enclosure (SES) hotplug on %s was detected, but is not supported</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>191</id>
+		<description>Clustering enabled</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>192</id>
+		<description>Clustering disabled</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>193</id>
+		<description>PD too small to be used for auto-rebuild on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>194</id>
+		<description>BBU enabled; changing WT virtual disks to WB</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>195</id>
+		<description>BBU disabled; changing WB virtual disks to WT</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>196</id>
+		<description>Bad block table on %s is 80% full</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>197</id>
+		<description>Bad block table on %s is full; unable to log block %lx</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>198</id>
+		<description>Consistency Check Aborted Due to Ownership Loss on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>199</id>
+		<description>Background Initialization (BGI) Aborted Due to Ownership Loss on %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>200</id>
+		<description>Battery/charger problems detected; SOH Bad</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>201</id>
+		<description>Single-bit ECC error: ECAR=%x, ELOG=%x, (%s); warning threshold exceeded</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>202</id>
+		<description>Single-bit ECC error: ECAR=%x, ELOG=%x, (%s); critical threshold exceeded</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>203</id>
+		<description>Single-bit ECC error: ECAR=%x, ELOG=%x, (%s); further reporting disabled</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>204</id>
+		<description>Enclosure %s Power supply %d switched off</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>205</id>
+		<description>Enclosure %s Power supply %d switched on</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>206</id>
+		<description>Enclosure %s Power supply %d cable removed</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>207</id>
+		<description>Enclosure %s Power supply %d cable inserted</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>208</id>
+		<description>Enclosure %s Fan %d returned to normal</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>209</id>
+		<description>BBU Retention test was initiated on previous boot</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>210</id>
+		<description>BBU Retention test passed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>211</id>
+		<description>BBU Retention test failed!</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>212</id>
+		<description>NVRAM Retention test was initiated on previous boot</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>213</id>
+		<description>NVRAM Retention test passed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>214</id>
+		<description>NVRAM Retention test failed!</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>215</id>
+		<description>%s test completed %d passes successfully</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>216</id>
+		<description>%s test FAILED on %d pass. Fail data: errorOffset=%x goodData=%x badData=%x</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>217</id>
+		<description>Self check diagnostics completed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>218</id>
+		<description>Foreign Configuration Detected</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>219</id>
+		<description>Foreign Configuration Imported</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>220</id>
+		<description>Foreign Configuration Cleared</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>221</id>
+		<description>NVRAM is corrupt; reinitializing</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>222</id>
+		<description>NVRAM mismatch occurred</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>223</id>
+		<description>SAS wide port %d lost link on PHY %d</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>224</id>
+		<description>SAS wide port %d restored link on PHY %d</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>225</id>
+		<description>SAS port %d, PHY %d has exceeded the allowed error rate</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>226</id>
+		<description>Bad block reassigned on %s at %lx to %lx</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>227</id>
+		<description>Controller Hot Plug detected</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>228</id>
+		<description>Enclosure %s temperature sensor %d differential detected</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>229</id>
+		<description>Disk test cannot start. No qulifying disks found</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>230</id>
+		<description>Time duration provided by host is not sufficient for self check</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>231</id>
+		<description>Marked Missing for %s on array %d row %d</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>232</id>
+		<description>Replaced Missing as %s on array %d row %d</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>233</id>
+		<description>Enclosure %s temperature sensor %d returned to normal</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>234</id>
+		<description>Enclosure %s Firmware download in progress</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>235</id>
+		<description>Enclosure %s Firmware download failed</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>236</id>
+		<description>%s is not a certified drive</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>237</id>
+		<description>Dirty cache data discarded by user</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>238</id>
+		<description>PDs missing from configuration at boot</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>239</id>
+		<description>VDs missing drives and will go offline at boot: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>240</id>
+		<description>VDs missing at boot: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>241</id>
+		<description>Previous configuration completely missing at boot</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>242</id>
+		<description>Battery charge complete</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>243</id>
+		<description>Enclosure %s fan %d speed changed</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>244</id>
+		<description>Dedicated spare %s imported as global due to missing arrays</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>245</id>
+		<description>%s rebuild not possible as SAS/SATA is not supported in an array</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>246</id>
+		<description>SEP %s has been rebooted as a part of enclosure firmware download. SEP will be unavailable until this process completes.</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>247</id>
+		<description>Inserted: %s Info: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>248</id>
+		<description>Removed: %s Info: %s</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>249</id>
+		<description>%s is now OPTIMAL</description>
+		<severity>Info</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>250</id>
+		<description>%s is now PARTIALLY DEGRADED</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>251</id>
+		<description>%s is now DEGRADED</description>
+		<severity>Critical</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>252</id>
+		<description>%s is now OFFLINE</description>
+		<severity>Fatal</severity>
+		<actionList>Syslog,VivaldiLog,Popup</actionList>
+	</alertInfo>
+
+	<alertInfo>
+		<id>253</id>
+		<description>Battery requires reconditioning; please initiate a LEARN cycle</description>
+		<severity>Warning</severity>
+		<actionList>Syslog,VivaldiLog</actionList>
+	</alertInfo>
+
+</alertDatabase>

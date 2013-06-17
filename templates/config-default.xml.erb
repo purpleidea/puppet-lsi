@@ -1,0 +1,1362 @@
+<monitor-config>
+	<actions>
+		<popup/>
+		<email>
+<% email.each do |value| -%>
+			<email-target><%= value %></email-target>
+<% end -%>
+			<servername>127.0.0.1</servername>
+			<password></password>
+			<sender>root@<%= fqdn %></sender>
+			<authentication-type>none</authentication-type><%# authentication type can be 'none' or 'basic' -%>
+			<username></username>
+		</email>
+		<systemlog/>
+		<vivaldilog/>
+	</actions>
+	<global>
+		<severity level="FATAL">
+			<do-systemlog/>
+			<do-vivaldilog/>
+			<do-popup/>
+			<do-email/>
+		</severity>
+		<severity level="CRITICAL">
+			<do-systemlog/>
+			<do-vivaldilog/>
+			<do-popup/>
+			<do-email/>
+		</severity>
+		<severity level="WARNING">
+			<do-systemlog/>
+			<do-vivaldilog/>
+			<do-email/>
+			</severity>
+		<severity level="INFO">
+			<do-vivaldilog/>
+		</severity>
+	</global>
+	<events>
+		<event id="65535" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="65534" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="65533" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="65532" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="65531" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="445" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="444" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="443" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="442" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="441" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="440" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="439" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="437" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="436" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="435" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="434" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="433" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="432" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="431" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="430" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="429" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="428" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="426" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="425" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="424" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="423" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="421" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="420" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="419" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="418" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="417" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="416" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="415" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="414" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="413" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="412" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="411" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="410" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="409" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="408" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="407" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="406" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="405" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="404" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="403" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="402" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="401" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="400" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="399" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="398" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="397" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="396" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="395" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="394" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="393" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="392" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="391" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="390" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="389" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="388" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="387" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="386" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="385" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="384" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="383" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="382" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="381" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="380" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="379" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="378" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="377" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="376" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="375" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="374" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="373" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="372" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="371" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="370" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="369" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="368" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="367" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="366" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="365" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="364" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="363" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="362" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="361" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="360" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="359" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="358" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="357" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="356" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="355" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="354" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="353" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="352" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="351" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="350" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="349" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="348" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="347" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="346" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="345" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="344" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="343" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="342" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="341" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="340" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="339" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="338" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="337" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="336" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="335" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="334" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="333" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="332" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="331" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="330" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="329" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="328" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="327" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="326" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="325" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="324" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="323" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="322" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="321" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="320" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="319" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="318" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="317" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="316" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="315" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="314" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="313" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="312" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="311" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="310" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="309" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="308" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="307" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="306" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="305" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="304" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="303" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="302" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="301" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="300" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="299" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="298" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="297" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="296" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="295" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="294" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="293" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="292" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="291" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="290" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="289" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="288" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="287" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="286" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="285" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="284" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="283" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="282" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="281" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="280" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="278" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="277" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="276" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="275" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="274" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="273" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="272" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="271" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="270" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="269" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="268" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="267" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="266" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="265" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="264" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="263" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="262" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="261" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="260" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="259" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="258" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="257" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="256" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="255" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="254" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="253" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="252" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="251" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="250" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="249" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="248" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="247" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="246" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="245" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="244" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="243" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="242" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="241" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="240" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="239" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="238" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="237" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="236" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="235" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="234" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="233" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="232" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="231" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="230" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="229" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="228" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="227" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="226" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="225" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="224" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="223" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="222" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="221" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="220" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="219" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="218" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="217" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="216" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="215" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="214" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="213" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="212" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="211" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="210" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="209" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="208" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="207" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="206" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="205" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="204" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="203" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="202" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="201" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="200" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="199" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="198" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="197" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="196" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="195" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="194" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="193" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="192" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="191" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="190" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="189" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="188" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="187" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="186" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="185" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="184" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="183" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="182" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="181" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="180" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="179" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="178" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="177" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="176" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="175" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="174" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="173" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="172" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="171" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="170" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="169" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="168" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="167" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="166" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="165" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="164" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="163" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="162" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="161" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="160" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="159" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="158" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="157" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="156" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="155" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="154" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="153" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="152" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="151" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="150" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="149" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="148" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="147" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="146" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="145" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="144" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="143" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="142" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="141" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="140" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="139" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="138" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="137" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="136" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="135" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="134" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="133" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="132" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="131" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="130" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="129" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="128" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="127" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="126" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="125" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="124" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="123" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="122" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="121" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="120" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="119" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="118" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="117" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="116" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="115" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="114" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="113" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="112" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="111" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="110" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="109" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="108" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="107" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="106" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="105" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="104" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="102" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="101" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="100" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="99" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="98" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="97" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="96" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="95" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="93" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="92" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="91" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="90" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="89" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="88" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="87" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="86" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="85" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="83" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="82" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="81" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="80" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="79" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="78" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="76" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="75" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="74" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="73" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="72" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="71" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="70" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="68" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="67" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="66" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="64" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="63" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="62" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="61" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="60" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="59" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="58" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="57" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="56" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="55" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="54" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="53" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="51" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="50" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="49" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="48" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="47" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="46" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="45" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="44" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="43" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="42" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="41" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="40" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="39" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="38" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="37" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="36" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="35" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="34" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="33" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="32" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="31" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="30" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="29" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="28" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="27" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="26" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="25" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="24" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="23" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="22" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="21" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="20" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="19" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="18" severity="CRITICAL">
+			<apply-global/>
+		</event>
+		<event id="17" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="16" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="15" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="14" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="13" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="12" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="11" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="10" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="9" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="8" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="7" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="6" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="5" severity="WARNING">
+			<apply-global/>
+		</event>
+		<event id="4" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="3" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="2" severity="FATAL">
+			<apply-global/>
+		</event>
+		<event id="1" severity="INFO">
+			<apply-global/>
+		</event>
+		<event id="0" severity="INFO">
+			<apply-global/>
+		</event>
+	</events>
+</monitor-config>
+

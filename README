@@ -1,0 +1,28 @@
+This is puppet-lsi a puppet module for lsi hardware RAID.
+
+Please read the INSTALL file for instructions on getting this installed.
+Look in the examples/ folder for usage. If none exist, please contribute one!
+This code may be a work in progress. The interfaces may change without notice.
+Patches are welcome, but please be patient. They are best received by email.
+Please ping me if you have big changes in mind, before you write a giant patch.
+
+Module specific notes:
+* This is more of a quick hack, than a completely finished module.
+* It made sense to spend a minimum of time touching the proprietary lsi tools.
+* Someone could probably write a puppet module to use megacli to manage things.
+* Generally, a user will configure their initial setup manually.
+* This module is useful for adding the LSI stuff on automatically on rebuilds.
+* Remember to add the LSI rpm's to your local yum repository.
+* LSI: If I'm not allowed to distribute the data in files/ please let me know!
+* Test this to your own satisfaction before risking your data!
+* I don't have any LSI gear right now. If you need support, I need hardware.
+* It's possible that newer versions of the LSI tools will be released.
+
+Dependencies:
+* my puppet-shorewall module (optional)
+* The LSI rpm's in your local yum repository
+
+
+Happy hacking,
+James Shubin <james@shubin.ca>, https://ttboj.wordpress.com/
+
