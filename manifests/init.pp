@@ -144,10 +144,13 @@ class lsi::msm(				# lsi megaraid storage manager (msm)
 	# FIXME: it seems other msm's try to communicate on the network at port tcp:49258
 	# it's not clear that this should be opened or not.. TBD. Maybe it should be blocked silently from leaving?
 	if $shorewall {
-		if $allow == 'all' {
+		if $allow == 'all' or "${allow}" == '' {
 			$net = "${zone}"
 		} else {
-			$net = "${zone}:${allow}"
+			$net = is_array($allow) ? {
+				true => sprintf("${zone}:%s", join($allow, ',')),
+				default => "${zone}:${allow}",
+			}
 		}
 		############################################################################
 		# ACTION      SOURCE DEST                PROTO DEST  SOURCE  ORIGINAL
